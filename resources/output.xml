@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-08T11:35:43.995389" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test" source="C:\Users\IB\Desktop\Project\RobotFramwork\test\login_test">
+<suite id="s1-s1" name="Valid Login" source="C:\Users\IB\Desktop\Project\RobotFramwork\test\login_test\valid_login.robot">
+<test id="s1-s1-t1" name="Test Case 1" line="6">
+<kw name="Import Results To Xray" owner="import">
+<kw name="Import Robot Results" owner="XrayApiImporter">
+<msg time="2025-04-08T11:35:45.820183" level="INFO">Request Headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnQiOiJiNmNhZGQwNS1lMzQxLTNmMTctYjU1Zi00OTM0MTI4MWQ4MmEiLCJhY2NvdW50SWQiOiI3MTIwMjA6ZGFlMjMzMmUtODUwMC00NTJjLWEwYWUtNzM1NjI2OWU0ZjQ5IiwiaXNYZWEiOmZhbHNlLCJpYXQiOjE3NDQxMDQ5MzYsImV4cCI6MTc0NDE5MTMzNiwiYXVkIjoiRTU3N0Y5Q0FFQzhBNDE3MTk4NUQyRjgyRjEyOUQ3M0YiLCJpc3MiOiJjb20ueHBhbmRpdC5wbHVnaW5zLnhyYXkiLCJzdWIiOiJFNTc3RjlDQUVDOEE0MTcxOTg1RDJGODJGMTI5RDczRiJ9.Te26LhyR21kELDmbEpysnkJFsTe27NEFTAHYTNBEapM', 'Content-Type': 'application/xml'}
+Request Body: b''</msg>
+<msg time="2025-04-08T11:35:45.820322" level="FAIL">Request Body: b''</msg>
+<var>${result}</var>
+<arg>C:/Users/IB/Desktop/Project/RobotFramwork/test/login_test/results/output.xml</arg>
+<status status="FAIL" start="2025-04-08T11:35:44.434591" elapsed="1.386700">Request Body: b''</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-08T11:35:45.821459" elapsed="0.000029"/>
+</kw>
+<status status="FAIL" start="2025-04-08T11:35:44.434052" elapsed="1.387541">Request Body: b''</status>
+</kw>
+<status status="FAIL" start="2025-04-08T11:35:44.433480" elapsed="1.388437">Request Body: b''</status>
+</test>
+<status status="FAIL" start="2025-04-08T11:35:44.017151" elapsed="1.805807"/>
+</suite>
+<status status="FAIL" start="2025-04-08T11:35:43.996475" elapsed="1.827299"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Test" id="s1" pass="0" fail="1" skip="0">Login Test</stat>
+<stat name="Valid Login" id="s1-s1" pass="0" fail="1" skip="0">Login Test.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

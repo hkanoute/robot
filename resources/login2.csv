@@ -1,0 +1,4 @@
+*** Test Cases ***;${username};${password}
+User enter valid username and password;tomsmith;SuperSecretPassword!
+Right user empty pass;tomsmith;${EMPTY}
+User enter invalid username and password;${EMPTY};${EMPTY}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-08T12:25:12.186567" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test" source="C:\Users\IB\Desktop\Project\RobotFramwork\test\login_test">
+<suite id="s1-s1" name="Valid Login" source="C:\Users\IB\Desktop\Project\RobotFramwork\test\login_test\valid_login.robot">
+<test id="s1-s1-t1" name="Test Case 1" line="6">
+<kw name="Import Results To Xray" owner="import">
+<kw name="Import Robot Results" owner="XrayApiImporter">
+<msg time="2025-04-08T12:25:13.897893" level="INFO">Authentication successful. Token: eyJhbGciOiJIUzI1NiIs...
+
+Sending request to: https://xray.cloud.getxray.app/api/v2/import/execution/robot?projectKey=POEI25
+Headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnQiOiJiNmNhZGQwNS1lMzQxLTNmMTctYjU1Zi00OTM0MTI4MWQ4MmEiLCJhY2NvdW50SWQiOiI3MTIwMjA6ZGFlMjMzMmUtODUwMC00NTJjLWEwYWUtNzM1NjI2OWU0ZjQ5IiwiaXNYZWEiOmZhbHNlLCJpYXQiOjE3NDQxMDc5MDQsImV4cCI6MTc0NDE5NDMwNCwiYXVkIjoiRTU3N0Y5Q0FFQzhBNDE3MTk4NUQyRjgyRjEyOUQ3M0YiLCJpc3MiOiJjb20ueHBhbmRpdC5wbHVnaW5zLnhyYXkiLCJzdWIiOiJFNTc3RjlDQUVDOEE0MTcxOTg1RDJGODJGMTI5RDczRiJ9.cQatI1mvcqc0d70KhF0ns9sq7Hlc5gFR5ceC9g3N9k8', 'Content-Type': 'application/xml', 'Content-Length': '0'}
+Body size: 0 bytes
+Response: 401 - {"error":"Could not find authentication data on request"}...</msg>
+<msg time="2025-04-08T12:25:13.898275" level="FAIL">Xray import failed
+Error: 401 Client Error: Unauthorized for url: https://xray.cloud.getxray.app/api/v2/import/execution/robot?projectKey=POEI25
+URL: https://xray.cloud.getxray.app/api/v2/import/execution/robot?projectKey=POEI25
+Params: {}
+Headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnQiOiJiNmNhZGQwNS1lMzQxLTNmMTctYjU1Zi00OTM0MTI4MWQ4MmEiLCJhY2NvdW50SWQiOiI3MTIwMjA6ZGFlMjMzMmUtODUwMC00NTJjLWEwYWUtNzM1NjI2OWU0ZjQ5IiwiaXNYZWEiOmZhbHNlLCJpYXQiOjE3NDQxMDc5MDQsImV4cCI6MTc0NDE5NDMwNCwiYXVkIjoiRTU3N0Y5Q0FFQzhBNDE3MTk4NUQyRjgyRjEyOUQ3M0YiLCJpc3MiOiJjb20ueHBhbmRpdC5wbHVnaW5zLnhyYXkiLCJzdWIiOiJFNTc3RjlDQUVDOEE0MTcxOTg1RDJGODJGMTI5RDczRiJ9.cQatI1mvcqc0d70KhF0ns9sq7Hlc5gFR5ceC9g3N9k8', 'Content-Type': 'application/xml'}
+File: test/login_test/results/output.xml (0)</msg>
+<var>${result}</var>
+<arg>test/login_test/results/output.xml</arg>
+<doc>Matches the curl command structure:
+curl -X POST       -H "Authorization: Bearer ..."       -H "Content-Type: application/xml"       --data @output.xml       "https://xray.../robot?projectKey=POEI25"</doc>
+<status status="FAIL" start="2025-04-08T12:25:12.644200" elapsed="1.257500">Xray import failed
+Error: 401 Client Error: Unauthorized for url: https://xray.cloud.getxray.app/api/v2/import/execution/robot?projectKey=POEI25
+URL: https://xray.cloud.getxray.app/api/v2/import/execution/robot?projectKey=POEI25
+Params: {}
+Headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnQiOiJiNmNhZGQwNS1lMzQxLTNmMTctYjU1Zi00OTM0MTI4MWQ4MmEiLCJhY2NvdW50SWQiOiI3MTIwMjA6ZGFlMjMzMmUtODUwMC00NTJjLWEwYWUtNzM1NjI2OWU0ZjQ5IiwiaXNYZWEiOmZhbHNlLCJpYXQiOjE3NDQxMDc5MDQsImV4cCI6MTc0NDE5NDMwNCwiYXVkIjoiRTU3N0Y5Q0FFQzhBNDE3MTk4NUQyRjgyRjEyOUQ3M0YiLCJpc3MiOiJjb20ueHBhbmRpdC5wbHVnaW5zLnhyYXkiLCJzdWIiOiJFNTc3RjlDQUVDOEE0MTcxOTg1RDJGODJGMTI5RDczRiJ9.cQatI1mvcqc0d70KhF0ns9sq7Hlc5gFR5ceC9g3N9k8', 'Content-Type': 'application/xml'}
+File: test/login_test/results/output.xml (0)</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-08T12:25:13.902240" elapsed="0.000096"/>
+</kw>
+<status status="FAIL" start="2025-04-08T12:25:12.643439" elapsed="1.259265">Xray import failed
+Error: 401 Client Error: Unauthorized for url: https://xray.cloud.getxray.app/api/v2/import/execution/robot?projectKey=POEI25
+URL: https://xray.cloud.getxray.app/api/v2/import/execution/robot?projectKey=POEI25
+Params: {}
+Headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnQiOiJiNmNhZGQwNS1lMzQxLTNmMTctYjU1Zi00OTM0MTI4MWQ4MmEiLCJhY2NvdW50SWQiOiI3MTIwMjA6ZGFlMjMzMmUtODUwMC00NTJjLWEwYWUtNzM1NjI2OWU0ZjQ5IiwiaXNYZWEiOmZhbHNlLCJpYXQiOjE3NDQxMDc5MDQsImV4cCI6MTc0NDE5NDMwNCwiYXVkIjoiRTU3N0Y5Q0FFQzhBNDE3MTk4NUQyRjgyRjEyOUQ3M0YiLCJpc3MiOiJjb20ueHBhbmRpdC5wbHVnaW5zLnhyYXkiLCJzdWIiOiJFNTc3RjlDQUVDOEE0MTcxOTg1RDJGODJGMTI5RDczRiJ9.cQatI1mvcqc0d70KhF0ns9sq7Hlc5gFR5ceC9g3N9k8', 'Content-Type': 'application/xml'}
+File: test/login_test/results/output.xml (0)</status>
+</kw>
+<status status="FAIL" start="2025-04-08T12:25:12.642637" elapsed="1.260920">Xray import failed
+Error: 401 Client Error: Unauthorized for url: https://xray.cloud.getxray.app/api/v2/import/execution/robot?projectKey=POEI25
+URL: https://xray.cloud.getxray.app/api/v2/import/execution/robot?projectKey=POEI25
+Params: {}
+Headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnQiOiJiNmNhZGQwNS1lMzQxLTNmMTctYjU1Zi00OTM0MTI4MWQ4MmEiLCJhY2NvdW50SWQiOiI3MTIwMjA6ZGFlMjMzMmUtODUwMC00NTJjLWEwYWUtNzM1NjI2OWU0ZjQ5IiwiaXNYZWEiOmZhbHNlLCJpYXQiOjE3NDQxMDc5MDQsImV4cCI6MTc0NDE5NDMwNCwiYXVkIjoiRTU3N0Y5Q0FFQzhBNDE3MTk4NUQyRjgyRjEyOUQ3M0YiLCJpc3MiOiJjb20ueHBhbmRpdC5wbHVnaW5zLnhyYXkiLCJzdWIiOiJFNTc3RjlDQUVDOEE0MTcxOTg1RDJGODJGMTI5RDczRiJ9.cQatI1mvcqc0d70KhF0ns9sq7Hlc5gFR5ceC9g3N9k8', 'Content-Type': 'application/xml'}
+File: test/login_test/results/output.xml (0)</status>
+</test>
+<status status="FAIL" start="2025-04-08T12:25:12.208173" elapsed="1.697475"/>
+</suite>
+<status status="FAIL" start="2025-04-08T12:25:12.187652" elapsed="1.718962"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Test" id="s1" pass="0" fail="1" skip="0">Login Test</stat>
+<stat name="Valid Login" id="s1-s1" pass="0" fail="1" skip="0">Login Test.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
