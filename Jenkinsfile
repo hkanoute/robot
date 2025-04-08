@@ -77,7 +77,7 @@ pipeline {
             
             ],
             "image": {
-              "url": "https://tenor.com/view/confused-kid-black-umm-mahmoud-gif-11362661"
+              "url": "https://c.tenor.com/_ha2H2_hlhEAAAAd/tenor.gif"
             }
         }]
         }
