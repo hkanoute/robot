@@ -9,9 +9,7 @@ pipeline {
     stages {
       stage('Curl') {
   steps {
-      bat 'curl -H "Content-Type: application/json" -X POST --data "{ \\"client_id\\": \\"%JIRA_ID_USR%\\",\\"client_secret\\": \\"%JIRA_ID_PSW%\\" }"  https://xray.cloud.getxray.app/api/v2/authenticate >token.txt'
-
-}
+      bat 'curl -H "Content-Type: application/json" -X POST --data "{ \\"client_id\\": \\"%JIRA_ID_USR%\\",\\"client_secret\\": \\"%JIRA_ID_PSW%\\" }"  https://xray.cloud.getxray.app/api/v2/authenticate >token.txt'}
       }
         stage('Test'){
             steps{
@@ -30,6 +28,18 @@ pipeline {
 
             }
 
+        }
+        stage('Discord notification') {
+            steps {
+                script {
+                    def webhookUrl = 'https://discordapp.com/api/webhooks/1359154405147934992/2RwoZD57gNSStkB8yxAUT4O7jAe7OOAECZTCuMj9tDW6RBHYUaCjgon1E05MoTjsaQlg'
+                    def message = "Build ${currentBuild.fullDisplayName} completed successfully!"
+                    def payload = """{
+                        "content": "${message}"
+                    }"""
+                    bat "curl -X POST -H \"Content-Type: application/json\" -d '${payload}' ${webhookUrl}"
+                }
+            }
         }
     }
 }
