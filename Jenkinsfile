@@ -77,7 +77,7 @@ pipeline {
             
             ],
             "image": {
-              "url": "https://images-ext-1.discordapp.net/external/QjUNVja7_lHd7TMUY7MebpNw_pCqUJz3K36DfVTtW6Y/https/media.tenor.com/ctRaCU2Now8AAAPo/akira-job-application.mp4"
+              "url": "https://media1.tenor.com/m/_ha2H2_hlhEAAAAd/wazowski-mike.gif"
             }
         }]
         }
