@@ -15,7 +15,7 @@ pipeline {
       }
         stage('Test'){
             steps{
-                bat 'robot tests.robot'
+                bat 'robot first.robot'
 
             }
             post {
