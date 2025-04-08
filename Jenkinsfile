@@ -71,7 +71,7 @@ pipeline {
             },
             {
             "name": "Pose pas de question sur le -6",
-            "value": "jsp",
+            "value": "${testResults}",
             "inline": false
             }
             
