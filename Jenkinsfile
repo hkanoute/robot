@@ -31,14 +31,7 @@ pipeline {
         }
         stage('Discord notification') {
             steps {
-                script {
-                    def webhookUrl = 'https://discordapp.com/api/webhooks/1359154405147934992/2RwoZD57gNSStkB8yxAUT4O7jAe7OOAECZTCuMj9tDW6RBHYUaCjgon1E05MoTjsaQlg'
-                    def message = "Build ${currentBuild.fullDisplayName} completed successfully!"
-                    def payload = """{
-                        "content": "${message}"
-                    }"""
-                    bat "curl -X POST -H \"Content-Type: application/json\" -d '${payload}' ${webhookUrl}"
-                }
+                bat 'curl -H "Content-Type: application/json" -X POST --data "{\\"content\\":\\"Test completed\\"}" https://discordapp.com/api/webhooks/1359154405147934992/2RwoZD57gNSStkB8yxAUT4O7jAe7OOAECZTCuMj9tDW6RBHYUaCjgon1E05MoTjsaQlg'
             }
         }
     }
