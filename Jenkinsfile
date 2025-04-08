@@ -68,10 +68,16 @@ pipeline {
             "name": "Tags",
             "value": "${uniqueTags}",
             "inline": false
+            },
+            {
+            "name": "Pose pas de question sur le -6",
+            "value": "jsp",
+            "inline": false
             }
+            
             ],
             "image": {
-              "url": "https://cdn.discordapp.com/attachments/1339228883098271807/1354752011752439919/image.png?ex=67f640a1&is=67f4ef21&hm=eac8455d0d0d5808307a1482b9a896f68f24012e73c05c10e054142396765841&"
+              "url": "https://tenor.com/view/confused-kid-black-umm-mahmoud-gif-11362661"
             }
         }]
         }
