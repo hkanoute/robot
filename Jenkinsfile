@@ -23,7 +23,6 @@ pipeline {
                         curl -H "Content-Type: text/xml" -X POST -H "Authorization: Bearer %TOKEN%" ^
                         --data @"output.xml" https://xray.cloud.getxray.app/api/v2/import/execution/robot?projectKey=POEI20252
                     """
-                    cleanWs()
                 }
 
             }
