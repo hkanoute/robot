@@ -71,13 +71,13 @@ pipeline {
             },
             {
             "name": "Pose pas de question sur le -6",
-            "value": "${testResults}",
+            "value": "jsp",
             "inline": false
             }
             
             ],
             "image": {
-              "url": "https://c.tenor.com/_ha2H2_hlhEAAAAd/tenor.gif"
+              "url": "https://images-ext-1.discordapp.net/external/QjUNVja7_lHd7TMUY7MebpNw_pCqUJz3K36DfVTtW6Y/https/media.tenor.com/ctRaCU2Now8AAAPo/akira-job-application.mp4"
             }
         }]
         }
